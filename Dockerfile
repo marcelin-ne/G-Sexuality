@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . /app
 
 # Instalar las dependencias necesarias
-RUN pip install --no-cache-dir Flask numpy tensorflow keras flask-cors Pillow waitress
+RUN pip install --no-cache-dir Flask numpy tensorflow keras flask-cors Pillow gunicorn
 
 EXPOSE 5000
 
